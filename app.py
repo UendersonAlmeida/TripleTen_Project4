@@ -56,7 +56,7 @@ if box_button_2:
     st.write(
         'Criando um boxplot para o conjunto de dados de anúncios de vendas de carros')
     # criar um boxplot
-    fig3 = px.box(car_data, x='transmission', y='price', color='transmission')
+    fig3 = px.histogram(car_data, x='transmission', y='price', color='transmission')
     fig3.update_layout(title='Boxplot de Preço por Tipo de Transmissão',
                        autosize=False, width=500, height=500)
     # exibir um gráfico Plotly interativo
