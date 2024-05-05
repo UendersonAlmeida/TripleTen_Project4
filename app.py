@@ -20,7 +20,8 @@ if hist_button:  # se o botão for clicado
 
     # criar um histograma
     fig = px.histogram(car_data, x="odometer")
-
+    fig.update_layout(title='Visualização da Coluna - ODOMER',
+                      autosize=False, width=500, height=500)
     # exibir um gráfico Plotly interativo
     st.plotly_chart(fig, use_container_width=True)
 
@@ -31,7 +32,6 @@ if scatter_button:  # se o botão for clicado
 
     # criar um gráfico de disperção
     fig1 = px.scatter(car_data, x="model_year", y="odometer")
-    fig1.update_layout(title='Visualização da Coluna - ODOMER', autosize=False, width=500, height=500)
 
     # exibir um gráfico Plotly interativo
     st.plotly_chart(fig1, use_container_width=True)
