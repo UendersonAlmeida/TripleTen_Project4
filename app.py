@@ -39,7 +39,7 @@ if bar_button: # se o botão for clicado
 
     # criar um gráfico de barras
     fig1 = px.bar(car_data, x='paint_color', template='none', color='paint_color')
-    fig1.update_layout(title='Contagem de Veículos por Cor', autosize=false, width=500, height=500)
+    fig1.update_layout(title='Contagem de Veículos por Cor', autosize=False, width=500, height=500)
 
     # exibir um gráfico ploply interativo
     st.plotly_chart(fig1, use_container_width=True)
