@@ -10,7 +10,8 @@ st.header('Encontre seu carro .NET')
 
  # criar um botão
 hist_button = st.button('Criar Grafico - odometer')
-hist_button_2 = st.button('Criar Grafico - Price')
+scatter_button = st.button('Criar gráfico de dispersão')
+
 
 if hist_button:  # se o botão for clicado
     # escrever uma mensagem
@@ -22,3 +23,11 @@ if hist_button:  # se o botão for clicado
 
     # exibir um gráfico Plotly interativo
     st.plotly_chart(fig, use_container_width=True)
+
+if scatter_button:
+    # escrever uma mensagem
+    st.write('Criar um grafico de disperção para o conjunto de dados de anúncios de vendas de carros')
+    # criar um grafico de disperção
+    fig = px.scartter(car_data, x="odometer", y="price")
+    #exibir um grafico Plotly interativo
+    str.plotly(fig, use_container_width=True)
