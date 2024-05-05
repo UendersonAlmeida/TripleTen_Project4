@@ -12,7 +12,7 @@ st.header('Aqui você verá três tipos de graficos')
 hist_button = st.button('Criar Gráfico - Odometer')
 scatter_button = st.button('Criar Gráfico de Dispersão')
 bar_button = st.button('Criar um Gráfico de Barra')
-bar_button2 = st.button('Criar um Gráfico de Barra')
+bar_button2 = st.button('Criar um Gráfico de Barra - Cores')
 
 if hist_button:  # se o botão for clicado
     # escrever uma mensagem
