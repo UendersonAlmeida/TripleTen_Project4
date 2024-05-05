@@ -12,6 +12,7 @@ st.header('Aqui você verá três tipos de graficos')
 hist_button = st.button('Criar Gráfico - Odometer')
 scatter_button = st.button('Criar Gráfico de Dispersão')
 bar_button = st.button('Criar um Gráfico de Barra')
+bar_button2 = st.button('Criar um Gráfico de Barra')
 
 if hist_button:  # se o botão for clicado
     # escrever uma mensagem
@@ -43,3 +44,15 @@ if bar_button: # se o botão for clicado
 
     # exibir um gráfico ploply interativo
     st.plotly_chart(fig1, use_container_width=True)
+
+if bar_button2: # se o botão for clicado
+    # escrever uma mensagem
+    st.write('Criando um gráfico de barra para o conjunto de dados de anúncios de vendas de carros')
+
+    # criar um grafico de barras
+    car_data = car_data.value_counts()
+    fig2 = px.bar(car_data, barmode='group', text_auto=Tre)
+    fig2.update_layout(title='Cores dos Carros', autosize=False, width=500, height=500)
+
+    # exibir um gráfico ploply interativo
+    st.ploply_chart(fig2, use_container_width=True)
