@@ -20,7 +20,7 @@ if hist_button:  # se o botão for clicado
 
     # criar um histograma
     fig = px.histogram(car_data, x="odometer")
-    fig.update_layout(title='Visualização da Coluna - ODOMER',
+    fig.update_layout(title='Visualização da Coluna - Odometer',
                       autosize=False, width=500, height=500)
     # exibir um gráfico Plotly interativo
     st.plotly_chart(fig, use_container_width=True)
