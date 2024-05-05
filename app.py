@@ -51,7 +51,7 @@ if bar_button2: # se o botão for clicado
 
     # criar um grafico de barras
     car_data = car_data.value_counts()
-    fig2 = px.bar(car_data, barmode='group', text_auto=Tre)
+    fig2 = px.bar(car_data, barmode='group', text_auto=True)
     fig2.update_layout(title='Cores dos Carros', autosize=False, width=500, height=500)
 
     # exibir um gráfico ploply interativo
