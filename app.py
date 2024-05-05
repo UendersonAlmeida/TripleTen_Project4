@@ -49,8 +49,10 @@ if bar_button2: # se o botão for clicado
     # escrever uma mensagem
     st.write('Criando um gráfico de barra para o conjunto de dados de anúncios de vendas de carros')
 
+    # redefinir o índice para garantir que não seja um MultiIndex
+    car_data = car_data.reset_index(drop=True)
+    
     # criar um grafico de barras
-    car_data = car_data.value_counts()
     fig2 = px.bar(car_data, barmode='group', text_auto=True)
     fig2.update_layout(title='Cores dos Carros', autosize=False, width=500, height=500)
 
