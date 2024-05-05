@@ -16,7 +16,7 @@
     - date_posted
     - days_listed
 
-O aplicativo permite que você analise diferentes situações sobre a venda de carros.
+* O aplicativo permite que você analise diferentes situações sobre a venda de carros.
   
     - Variação de preço referente a quilometragem
     - Valores dos carros mais vendidos
