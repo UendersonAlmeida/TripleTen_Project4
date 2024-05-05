@@ -6,7 +6,7 @@ car_data = pd.read_csv('vehicles.csv')  # lendo os dados
 
 # Cabeçalho
 st.header('Visualização de alguns dados referente ao anúncio de vendas de carros')
-st.header('Aqui você verá três tipos de graficos')
+st.header('Aqui você verá quatro tipos de graficos')
 
 # criar um botão
 hist_button = st.button('Criar Gráfico - odometer')
