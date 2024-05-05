@@ -18,7 +18,14 @@
 
 * O aplicativo permite que você analise diferentes situações sobre a venda de carros.
   
-    - Variação de preço referente a quilometragem
-    - Valores dos carros mais vendidos
-    - 
-    - Volume por cores
+    - Mostra um histograma referente a coluna odometer
+    - Mostra um gráfico de dispersão referente a model_year e odometer
+    - Mostra um boxplot preço por modelo de trasmissão
+    - Mostra um gráfico de barra com a contagem de veiculos por cores
+
+* **Conclusão**
+
+Se os dados analisado estiverem corretos, conseguiremos saber sobre os fatores que influenciam os preços dos veiclos, assim como preferencia do tipo de trasmissão, combustivel, ano de fabricação e variação de preço por quilometragem.
+
+# Link do Aplicativo
+    - https://tripleten-project4.onrender.com
