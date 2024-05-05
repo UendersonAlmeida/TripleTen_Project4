@@ -20,5 +20,5 @@
   
     - Variação de preço referente a quilometragem
     - Valores dos carros mais vendidos
-    - Valores por diferentes tipos de trasmissão
-    - Cores mais vendidas separadamente
+    - 
+    - Volume por cores

@@ -12,6 +12,7 @@ st.header('Aqui você verá três tipos de graficos')
 hist_button = st.button('Criar Gráfico - Odometer')
 scatter_button = st.button('Criar Gráfico de Dispersão - Model_year/Odometer')
 bar_button = st.button('Criar um Gráfico de Barra - Color')
+box_button_2 = st.button('Preço por modelo de transmissão')
 
 if hist_button:  # se o botão for clicado
     # escrever uma mensagem
@@ -49,3 +50,14 @@ if bar_button:  # se o botão for clicado
 
     # exibir um gráfico ploply interativo
     st.plotly_chart(fig2, use_container_width=True)
+
+if box_button_2:
+    # escrever uma mensagem
+    st.write(
+        'Criando um boxplot para o conjunto de dados de anúncios de vendas de carros')
+    # criar um boxplot
+    fig3 = px.box(car_data, x='transmission', y='price', color='transmission')
+    fig3.update_layout(title='Boxplot de Preço por Tipo de Transmissão',
+                       autosize=False, width=500, height=500)
+    # exibir um gráfico Plotly interativo
+    st.plotly_chart(fig3, use_container_width=True)
