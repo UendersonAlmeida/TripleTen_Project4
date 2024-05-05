@@ -19,7 +19,8 @@ if hist_button:  # se o botão for clicado
         'Criando um histograma para o conjunto de dados de anúncios de vendas de carros')
 
     # criar um histograma
-    fig = px.histogram(car_data, x="odometer")
+    fig = px.histogram(car_data, x="odometer", template='nine', nbins=20, text_auto=True, color_discrete_sequence=px.colors.qualitative.Antique)
+    fig.update_layout(title='Visualização da Coluna',autosize=False, width=500, height=500)
 
     # exibir um gráfico Plotly interativo
     st.plotly_chart(fig, use_container_width=True)
@@ -30,10 +31,10 @@ if scatter_button:  # se o botão for clicado
         'Criar um grafico de disperção para o conjunto de dados de anúncios de vendas de carros')
 
     # criar um gráfico de disperção
-    fig = px.scatter(car_data, x="model_year", y="odometer")
+    fig1 = px.scatter(car_data, x="model_year", y="odometer")
 
     # exibir um gráfico Plotly interativo
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig1, use_container_width=True)
 
 if bar_button:  # se o botão for clicado
     # escrever uma mensagem
@@ -41,10 +42,10 @@ if bar_button:  # se o botão for clicado
         'Criando um gráfico de barra para o conjunto de dados de anúncios de vendas de carros')
 
     # criar um gráfico de barras
-    fig1 = px.bar(car_data, x='paint_color',
+    fig2 = px.bar(car_data, x='paint_color',
                   template='none', color='paint_color')
-    fig1.update_layout(title='Contagem de Veículos por Cor',
+    fig2.update_layout(title='Contagem de Veículos por Cor',
                        autosize=False, width=500, height=500)
 
     # exibir um gráfico ploply interativo
-    st.plotly_chart(fig1, use_container_width=True)
+    st.plotly_chart(fig2, use_container_width=True)
