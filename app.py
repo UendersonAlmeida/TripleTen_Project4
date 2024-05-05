@@ -9,10 +9,10 @@ st.header('Visualização de alguns dados referente ao anúncio de vendas de car
 st.header('Aqui você verá três tipos de graficos')
 
 # criar um botão
-hist_button = st.button('Criar Gráfico - Odometer')
-scatter_button = st.button('Criar Gráfico de Dispersão - Model_year/Odometer')
-bar_button = st.button('Criar um Gráfico de Barra - Color')
-box_button_2 = st.button('Preço por modelo de transmission')
+hist_button = st.button('Criar Gráfico - odometer')
+scatter_button = st.button('Criar Gráfico de Dispersão - model_year/odometer')
+bar_button = st.button('Criar um Gráfico de Barra - paint_color')
+box_button_2 = st.button('Preço por modelo de transmissão')
 
 if hist_button:  # se o botão for clicado
     # escrever uma mensagem
