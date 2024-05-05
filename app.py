@@ -21,6 +21,7 @@ if hist_button:  # se o botão for clicado
     # criar um histograma
     fig = px.histogram(car_data, x="odometer", template='nine', nbins=20, text_auto=True, color_discrete_sequence=px.colors.qualitative.Antique)
     fig.update_layout(title='Visualização da Coluna',autosize=False, width=500, height=500)
+    fig1.update_traces(marker_line_width=1, marker_line_color="black")
 
     # exibir um gráfico Plotly interativo
     st.plotly_chart(fig, use_container_width=True)
