@@ -30,4 +30,4 @@ if scatter_button:
     # criar um grafico de disperção
     fig = px.scatter(car_data, x="odometer", y="price")
     #exibir um grafico Plotly interativo
-    st.plotly(fig, use_container_width=True)
+    st.plotly_chart(fig, use_container_width=True)
